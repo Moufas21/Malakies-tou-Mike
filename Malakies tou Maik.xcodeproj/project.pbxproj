@@ -80,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				3B067FA128FF43DA0061C0FD /* Malakies tou Maik */,
-				3B067FB828FF43DC0061C0FD /* Malakies tou MaikTests */,
-				3B067FC228FF43DC0061C0FD /* Malakies tou MaikUITests */,
+				3B067FB828FF43DC0061C0FD /* Malakies tou MikeTests */,
+				3B067FC228FF43DC0061C0FD /* Malakies tou MikeUITests */,
 				3B067FA028FF43DA0061C0FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,21 +110,21 @@
 			path = "Malakies tou Maik";
 			sourceTree = "<group>";
 		};
-		3B067FB828FF43DC0061C0FD /* Malakies tou MaikTests */ = {
+		3B067FB828FF43DC0061C0FD /* Malakies tou MikeTests */ = {
 			isa = PBXGroup;
 			children = (
 				3B067FB928FF43DC0061C0FD /* Malakies_tou_MaikTests.swift */,
 			);
-			path = "Malakies tou MaikTests";
+			path = "Malakies tou MikeTests";
 			sourceTree = "<group>";
 		};
-		3B067FC228FF43DC0061C0FD /* Malakies tou MaikUITests */ = {
+		3B067FC228FF43DC0061C0FD /* Malakies tou MikeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				3B067FC328FF43DC0061C0FD /* Malakies_tou_MaikUITests.swift */,
 				3B067FC528FF43DC0061C0FD /* Malakies_tou_MaikUITestsLaunchTests.swift */,
 			);
-			path = "Malakies tou MaikUITests";
+			path = "Malakies tou MikeUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
