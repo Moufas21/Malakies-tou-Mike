@@ -43,6 +43,7 @@ class ViewController: UIViewController {
     
     func selectRandomButton(){
         let randomNumber = Int.random(in: 0...17)
+        
         buttons[randomNumber].backgroundColor = UIColor.green
         buttons[randomNumber].setTitle("Click Me!", for: .normal)
     }
@@ -136,106 +137,9 @@ class ViewController: UIViewController {
         setUpViews()
     }
     
-    @IBAction func buttonPressed1(){
-        button1.backgroundColor = UIColor.gray
-        button1.setTitle("", for: .normal)
-        selectRandomButton()
-    }
-    @IBAction func buttonPressed2(){
-        button2.backgroundColor = UIColor.gray
-        button2.setTitle("", for: .normal)
-        selectRandomButton()
-    }
-    @IBAction func buttonPressed3(){
-        button3.backgroundColor = UIColor.gray
-        button3.setTitle("", for: .normal)
-        selectRandomButton()
-       
-    }
-    @IBAction func buttonPressed4(){
-        button4.backgroundColor = UIColor.gray
-        button4.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed5(){
-        button5.backgroundColor = UIColor.gray
-        button5.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed6(){
-        button6.backgroundColor = UIColor.gray
-        button6.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed7(){
-        button7.backgroundColor = UIColor.gray
-        button7.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed8(){
-        button8.backgroundColor = UIColor.gray
-        button8.setTitle("", for: .normal)
-        selectRandomButton()
-    }
-    @IBAction func buttonPressed9(){
-        button9.backgroundColor = UIColor.gray
-        button9.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed10(){
-        button10.backgroundColor = UIColor.gray
-        button10.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed11(){
-        button11.backgroundColor = UIColor.gray
-        button11.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed12(){
-        button12.backgroundColor = UIColor.gray
-        button12.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed13(){
-        button13.backgroundColor = UIColor.gray
-        button13.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed14(){
-        button14.backgroundColor = UIColor.gray
-        button14.setTitle("", for: .normal)
-        selectRandomButton()
-    }
-    @IBAction func buttonPressed15(){
-        button15.backgroundColor = UIColor.gray
-        button15.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed16(){
-        button16.backgroundColor = UIColor.gray
-        button16.setTitle("", for: .normal)
-        selectRandomButton()
-    }
-    @IBAction func buttonPressed17(){
-        button17.backgroundColor = UIColor.gray
-        button17.setTitle("", for: .normal)
-        selectRandomButton()
-        
-    }
-    @IBAction func buttonPressed18(){
-        button18.backgroundColor = UIColor.gray
-        button18.setTitle("", for: .normal)
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.gray
+        sender.setTitle("", for: .normal)
         selectRandomButton()
     }
     
