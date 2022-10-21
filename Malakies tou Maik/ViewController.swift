@@ -22,7 +22,11 @@ class ViewController: UIViewController {
                                    UIColor.yellow,
                                    UIColor.purple,
                                    UIColor.cyan,
-                                   UIColor.white]
+                                   UIColor.white,
+                                   UIColor.magenta,
+                                   UIColor.brown,
+                                   UIColor.systemIndigo,
+                                   UIColor.systemMint]
     
     
     //MARK: - Outlets
