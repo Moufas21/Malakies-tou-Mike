@@ -161,6 +161,12 @@ class ViewController: UIViewController {
                    button18]
     }
     
+    func disable(button: UIButton) {
+        button.isEnabled = false
+        button.backgroundColor = UIColor.gray
+        button.setTitle("", for: .normal)
+    }
+    
     
     //MARK: - Lifecycles
     
@@ -173,9 +179,7 @@ class ViewController: UIViewController {
     //MARK: - Actions
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        sender.isEnabled = false
-        sender.backgroundColor = UIColor.gray
-        sender.setTitle("", for: .normal)
+        disable(button: sender)
         selectRandomButton()
     }
     
