@@ -9,9 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //MARK: - Properties
     var corners: CGFloat = 15
     var color = UIColor.gray
     var buttons: [UIButton] = []
+    var randomColors: [UIColor] = [UIColor.green,
+                                   UIColor.blue,
+                                   UIColor.systemPink,
+                                   UIColor.orange,
+                                   UIColor.red,
+                                   UIColor.yellow,
+                                   UIColor.purple,
+                                   UIColor.cyan,
+                                   UIColor.white]
+    
+    
+    //MARK: - Outlets
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -33,7 +46,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var button18: UIButton!
     
     
-    func setUpViews(){
+    //MARK: - Functions
+    
+    func setUpViews() {
         roundCorners()
         setBackGroundColors()
         setTintColors()
@@ -41,10 +56,11 @@ class ViewController: UIViewController {
         selectRandomButton()
     }
     
-    func selectRandomButton(){
+    func selectRandomButton() {
         let randomNumber = Int.random(in: 0...17)
+        let randomColorNumber = Int.random(in: 0...8)
         
-        buttons[randomNumber].backgroundColor = UIColor.green
+        buttons[randomNumber].backgroundColor = randomColors[randomColorNumber]
         buttons[randomNumber].setTitle("Click Me!", for: .normal)
     }
     
@@ -90,7 +106,7 @@ class ViewController: UIViewController {
         button18.layer.cornerRadius = corners
     }
     
-    func setBackGroundColors(){
+    func setBackGroundColors() {
         button1.backgroundColor = color
         button2.backgroundColor = color
         button3.backgroundColor = color
@@ -132,10 +148,14 @@ class ViewController: UIViewController {
                    button18]
     }
     
+    //MARK: - Lifecycles
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViews()
     }
+    
+    //MARK: - Actions
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         sender.backgroundColor = UIColor.gray
@@ -143,6 +163,5 @@ class ViewController: UIViewController {
         selectRandomButton()
     }
     
-
 }
 
