@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         setBackGroundColors()
         setTintColors()
         setupButtonArray()
+        disableButtons()
         selectRandomButton()
     }
     
@@ -63,6 +64,7 @@ class ViewController: UIViewController {
         
         buttons[randomNumber].backgroundColor = randomColors[randomColorNumber]
         buttons[randomNumber].setTitle("Click Me!", for: .normal)
+        buttons[randomNumber].isEnabled = true
     }
     
     func setTintColors() {
@@ -128,6 +130,12 @@ class ViewController: UIViewController {
         button18.backgroundColor = color
     }
     
+    func disableButtons() {
+        buttons.forEach { button in
+            button.isEnabled = false
+        }
+    }
+    
     func setupButtonArray() {
         buttons = [button1,
                    button2,
@@ -161,14 +169,11 @@ class ViewController: UIViewController {
     //MARK: - Actions
     
     @IBAction func buttonPressed(_ sender: UIButton) {
+        sender.isEnabled = false
         sender.backgroundColor = UIColor.gray
         sender.setTitle("", for: .normal)
         selectRandomButton()
     }
     
-}
-
-extension ViewController {
-    //FIXME: - Disable Buttons
 }
 
