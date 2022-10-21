@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     //MARK: - Properties
+    
     var corners: CGFloat = 15
     var color = UIColor.gray
     var buttons: [UIButton] = []
@@ -148,12 +149,14 @@ class ViewController: UIViewController {
                    button18]
     }
     
+    
     //MARK: - Lifecycles
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViews()
     }
+    
     
     //MARK: - Actions
     
